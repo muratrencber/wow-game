@@ -8,6 +8,7 @@ public class KorayTest : MonoBehaviour
     void Start()
     {
         print("koray test file...");
+        print("koray test file...");
     }
 
     // Update is called once per frame
