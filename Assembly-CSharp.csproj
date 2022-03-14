@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\murat\scripts\MuratTest.cs" />
+<<<<<<< HEAD
      <Compile Include="Assets\koray\scripts\Father_AI.cs" />
      <Compile Include="Assets\koray\scripts\pickableobject.cs" />
      <Compile Include="Assets\koray\scripts\book.cs" />
@@ -45,6 +46,9 @@
      <Compile Include="Assets\koray\scripts\teapot.cs" />
      <Compile Include="Assets\koray\scripts\teacup.cs" />
      <Compile Include="Assets\koray\scripts\mainloop.cs" />
+=======
+     <Compile Include="Assets\koray\scripts\KorayTest.cs" />
+>>>>>>> 9f611a681fa2114aaf7cd4aa93336fd78fb0b7d2
     <Reference Include="UnityEngine">
         <HintPath>C:\importantfiles\unti\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -613,6 +617,7 @@
         <HintPath>C:\importantfiles\unti\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Editor">
+<<<<<<< HEAD
         <HintPath>C:\Users\koray\OneDrive - Istanbul Kultur Universitesi\Masaüstü\klasör\wow-game\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
@@ -701,6 +706,96 @@
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
         <HintPath>C:\Users\koray\OneDrive - Istanbul Kultur Universitesi\Masaüstü\klasör\wow-game\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
+=======
+        <HintPath>C:\Users\SkyjNN\Documents\GitHub\wow-game\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InternalAPIEngineBridge.001">
+        <HintPath>C:\Users\SkyjNN\Documents\GitHub\wow-game\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+        <HintPath>C:\Users\SkyjNN\Documents\GitHub\wow-game\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.PixelPerfect">
+        <HintPath>C:\Users\SkyjNN\Documents\GitHub\wow-game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+        <HintPath>C:\Users\SkyjNN\Documents\GitHub\wow-game\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="PsdPlugin">
+        <HintPath>C:\Users\SkyjNN\Documents\GitHub\wow-game\Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+        <HintPath>C:\Users\SkyjNN\Documents\GitHub\wow-game\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+        <HintPath>C:\Users\SkyjNN\Documents\GitHub\wow-game\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+        <HintPath>C:\Users\SkyjNN\Documents\GitHub\wow-game\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+        <HintPath>C:\Users\SkyjNN\Documents\GitHub\wow-game\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.IK.Editor">
+        <HintPath>C:\Users\SkyjNN\Documents\GitHub\wow-game\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+        <HintPath>C:\Users\SkyjNN\Documents\GitHub\wow-game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Psdimporter.Editor">
+        <HintPath>C:\Users\SkyjNN\Documents\GitHub\wow-game\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Path.Editor">
+        <HintPath>C:\Users\SkyjNN\Documents\GitHub\wow-game\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InternalAPIEditorBridge.001">
+        <HintPath>C:\Users\SkyjNN\Documents\GitHub\wow-game\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+        <HintPath>C:\Users\SkyjNN\Documents\GitHub\wow-game\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+        <HintPath>C:\Users\SkyjNN\Documents\GitHub\wow-game\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+        <HintPath>C:\Users\SkyjNN\Documents\GitHub\wow-game\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+        <HintPath>C:\Users\SkyjNN\Documents\GitHub\wow-game\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+        <HintPath>C:\Users\SkyjNN\Documents\GitHub\wow-game\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.IK.Runtime">
+        <HintPath>C:\Users\SkyjNN\Documents\GitHub\wow-game\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Animation.Triangle.Runtime">
+        <HintPath>C:\Users\SkyjNN\Documents\GitHub\wow-game\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Animation.Runtime">
+        <HintPath>C:\Users\SkyjNN\Documents\GitHub\wow-game\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.PixelPerfect.Editor">
+        <HintPath>C:\Users\SkyjNN\Documents\GitHub\wow-game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+        <HintPath>C:\Users\SkyjNN\Documents\GitHub\wow-game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+        <HintPath>C:\Users\SkyjNN\Documents\GitHub\wow-game\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Common.Runtime">
+        <HintPath>C:\Users\SkyjNN\Documents\GitHub\wow-game\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.SpriteShape.Editor">
+        <HintPath>C:\Users\SkyjNN\Documents\GitHub\wow-game\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Common.Editor">
+        <HintPath>C:\Users\SkyjNN\Documents\GitHub\wow-game\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.SpriteShape.Runtime">
+        <HintPath>C:\Users\SkyjNN\Documents\GitHub\wow-game\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
+>>>>>>> 9f611a681fa2114aaf7cd4aa93336fd78fb0b7d2
     </Reference>
   </ItemGroup>
   <ItemGroup>
