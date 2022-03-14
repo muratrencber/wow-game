@@ -8,6 +8,7 @@ public class MuratTest : MonoBehaviour
     void Start()
     {
         print("This is a test log!");
+        print("This is a test log for second try!");
     }
 
     // Update is called once per frame
