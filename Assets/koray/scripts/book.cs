@@ -9,7 +9,7 @@ public class book : pickableobject
     public override void Pickup()
     {
         FindObjectOfType<inventory>().bookcount++;  
-        Instantiate(starexp);
+        Instantiate(starexp,transform.position,Quaternion.identity);
         base.Pickup();
 
     }
