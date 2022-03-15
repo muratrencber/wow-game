@@ -26,7 +26,6 @@ public class Player : MonoBehaviour {
 		rb = GetComponent<Rigidbody2D>();
 		Time.timeScale = 1;
 		anim = GetComponent<Animator>();
-		cam=Camera.main.transform;
 	}
 	
 	
@@ -42,15 +41,6 @@ public class Player : MonoBehaviour {
 			anim.SetTrigger("jump");
         }
 		movement = Input.GetAxis("Horizontal") * movementSpeed;
-        {
-            
-        }
-		{
-			if(cam.position.y > transform.position.y + 7f){
-				Time.timeScale = 0;
-				
-			}
-		}
 		
 		if(Input.GetAxisRaw("Horizontal")==1){
 			transform.eulerAngles=new Vector3(0,0,0);
