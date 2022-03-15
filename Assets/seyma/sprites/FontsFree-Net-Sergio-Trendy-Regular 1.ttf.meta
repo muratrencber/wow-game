@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 3b6450c94d4d04945b4b8253d058f819
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Sergio Trendy
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 8bbc3c313dec5be4a93493b4bbd29777, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
