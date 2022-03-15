@@ -181,7 +181,10 @@ public class Dad : MonoBehaviour
         timer = _bookReadTime.GetRandom();
         onTimerFinished = WatchedTV;
         if(Slider.Locked)
+        {
             Slider.Unlock();
+            Slider.AddForce(100);
+        }
     }
 
     void WatchedTV()

@@ -40,7 +40,7 @@ public class BookOnDesk : MonoBehaviour, IDraggable, IDadItem
     {
         if(!dragging)
         {
-            Vector3 targetPosition = _bookKey == "book" ? BookManager.bookPositions[BookManager.CurrentBookCount - 1] : initalPosition;
+            Vector3 targetPosition = _bookKey == "book" ? BookManager.bookPositions[index] : initalPosition;
             transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * RETURN_SPEED);
         }
     }
