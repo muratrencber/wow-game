@@ -54,6 +54,7 @@ public class Slider : MonoBehaviour, IDragHandler
         Vector3 pos = instance._sliderUI.transform.position;
         pos.x = xPos;
         instance._sliderUI.transform.position = pos;
+        CamSlider.SetCameras(LeftRatio);
     }
 
     public static void SetUIFromRatio(float newRatio)
