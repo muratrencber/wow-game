@@ -1,0 +1,1236 @@
+fileFormatVersion: 2
+guid: 5376a8a13a5f400479ad63ecfe5d303b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2213686937922074984
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_0
+  - first:
+      213: 7916721493595031136
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_1
+  - first:
+      213: 6299058301184504916
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_2
+  - first:
+      213: 7662200254720363723
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_3
+  - first:
+      213: -8542633453786868559
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_4
+  - first:
+      213: 3210368078800711305
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_5
+  - first:
+      213: -7612658586008239928
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_6
+  - first:
+      213: 8088649913463234083
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_7
+  - first:
+      213: 3560056877747726512
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_8
+  - first:
+      213: -4697565527068226059
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_9
+  - first:
+      213: 5306983979600365607
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_10
+  - first:
+      213: -5374345657028585977
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_11
+  - first:
+      213: 4094005817956777335
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_12
+  - first:
+      213: -5820415883589966406
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_13
+  - first:
+      213: 1884463402677767964
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_14
+  - first:
+      213: 6613919259363129455
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_15
+  - first:
+      213: 1049973709945608221
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_16
+  - first:
+      213: -5820758109591530732
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_17
+  - first:
+      213: 2896144941078581927
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_18
+  - first:
+      213: 5924408638462086674
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_19
+  - first:
+      213: -7020593254351895740
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_20
+  - first:
+      213: 6422667207588683962
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_21
+  - first:
+      213: -4679476932258966855
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_22
+  - first:
+      213: 6533902946802284132
+    second: platform
+  - first:
+      213: 134597685624808894
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_24
+  - first:
+      213: -7123786913743511738
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_25
+  - first:
+      213: 2898297793042108118
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_26
+  - first:
+      213: -8177756008334480016
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_27
+  - first:
+      213: 988599872621786477
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_28
+  - first:
+      213: 9045447044697160505
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_29
+  - first:
+      213: 62128026962234894
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_30
+  - first:
+      213: -4392284935134838845
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_31
+  - first:
+      213: 2084066578051969509
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_32
+  - first:
+      213: 395975285460658316
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_33
+  - first:
+      213: -6218867915974243720
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_34
+  - first:
+      213: -445786231862231912
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_35
+  - first:
+      213: 6070480214186496573
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_36
+  - first:
+      213: 3570162466030483001
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_37
+  - first:
+      213: -5542944326031224213
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_38
+  - first:
+      213: -8684783541665318656
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_39
+  - first:
+      213: 8252803491328571005
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_40
+  - first:
+      213: 5505808800712755135
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_41
+  - first:
+      213: 7184889400573607967
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_42
+  - first:
+      213: -2411792101629216314
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_43
+  - first:
+      213: -7363423559672317232
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_44
+  - first:
+      213: 2877361953161182849
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_45
+  - first:
+      213: -2222436598360909507
+    second: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_46
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_0
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 609
+        width: 45
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86974ca9a8898be10800000000000000
+      internalID: 2213686937922074984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_1
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 566
+        width: 110
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0668e6bf048dddd60800000000000000
+      internalID: 7916721493595031136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_2
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 566
+        width: 110
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 454f39da620ca6750800000000000000
+      internalID: 6299058301184504916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_3
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 573
+        width: 86
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bccc38c198a955a60800000000000000
+      internalID: 7662200254720363723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_4
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 573
+        width: 86
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b45aa47228727980800000000000000
+      internalID: -8542633453786868559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_5
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 563
+        width: 34
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e6b2722c48d8c20800000000000000
+      internalID: 3210368078800711305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_6
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 563
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c0c6a089576a5690800000000000000
+      internalID: -7612658586008239928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 570
+        width: 83
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32e5874ad38a04070800000000000000
+      internalID: 8088649913463234083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 475
+        width: 325
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b8e65a4edcd76130800000000000000
+      internalID: 3560056877747726512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_9
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 492
+        width: 86
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd4af9ba05eeceb0800000000000000
+      internalID: -4697565527068226059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_10
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 492
+        width: 86
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 728c4c4dfc136a940800000000000000
+      internalID: 5306983979600365607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_11
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 482
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 706d5a4791d7a65b0800000000000000
+      internalID: -5374345657028585977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_12
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 482
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77d32b7b994d0d830800000000000000
+      internalID: 4094005817956777335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 354
+        width: 325
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab5249d779ab93fa0800000000000000
+      internalID: -5820415883589966406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_14
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 414
+        width: 86
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1f05dcfa75f62a10800000000000000
+      internalID: 1884463402677767964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_15
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 414
+        width: 86
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f68347b368c59cb50800000000000000
+      internalID: 6613919259363129455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_16
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 403
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d189ec4b681429e00800000000000000
+      internalID: 1049973709945608221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_17
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 403
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 413925ac653883fa0800000000000000
+      internalID: -5820758109591530732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_18
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 331
+        width: 86
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a2980fba7c213820800000000000000
+      internalID: 2896144941078581927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_19
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 331
+        width: 86
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21ec9cf844ab73250800000000000000
+      internalID: 5924408638462086674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_20
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 321
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4430ad1c1a7d19e90800000000000000
+      internalID: -7020593254351895740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_21
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 321
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab0afdaebc5e12950800000000000000
+      internalID: 6422667207588683962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 233
+        width: 524
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b2d116e5882f0fb0800000000000000
+      internalID: -4679476932258966855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platform
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 273
+        width: 72
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 466370dac161daa50800000000000000
+      internalID: 6533902946802284132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_24
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 273
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb5a147c1ef2ed100800000000000000
+      internalID: 134597685624808894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_25
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 274
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64fddbe9b89332d90800000000000000
+      internalID: -7123786913743511738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_26
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 242
+        width: 22
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dec297ac72d83820800000000000000
+      internalID: 2898297793042108118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_27
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 234
+        width: 20
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07d286fec36c28e80800000000000000
+      internalID: -8177756008334480016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_28
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 208
+        width: 196
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d653e98a85638bd00800000000000000
+      internalID: 988599872621786477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_29
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 211
+        width: 124
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93bf7cd8922e78d70800000000000000
+      internalID: 9045447044697160505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_30
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 208
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e0ea18c19bcd000800000000000000
+      internalID: 62128026962234894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_31
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 202
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cffcf07f187b03c0800000000000000
+      internalID: -4392284935134838845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112
+        width: 325
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e13d09c2871cec10800000000000000
+      internalID: 2084066578051969509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_33
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 31
+        width: 60
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8867b59c69ce7500800000000000000
+      internalID: 395975285460658316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_34
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 31
+        width: 100
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87a0843549422b9a0800000000000000
+      internalID: -6218867915974243720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_35
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 172
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c7714b8cf30d9f0800000000000000
+      internalID: -445786231862231912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_36
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 114
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d329f9e879dae3450800000000000000
+      internalID: 6070480214186496573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_37
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 55
+        width: 21
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 936fd2ae8d3cb8130800000000000000
+      internalID: 3570162466030483001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_38
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 114
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b625425d0818313b0800000000000000
+      internalID: -5542944326031224213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_39
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 54
+        width: 21
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00931eff163797780800000000000000
+      internalID: -8684783541665318656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_40
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 125
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d763eb5dc09d78270800000000000000
+      internalID: 8252803491328571005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 83
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb704b7eeef886c40800000000000000
+      internalID: 5505808800712755135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_42
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 72
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f10c8a7b7dad5b360800000000000000
+      internalID: 7184889400573607967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_43
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 72
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c93c4e9cd7978ed0800000000000000
+      internalID: -2411792101629216314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_44
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 81
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0da3dfa194ddfc990800000000000000
+      internalID: -7363423559672317232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_45
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 8
+        width: 86
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18e756493717ee720800000000000000
+      internalID: 2877361953161182849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg-maker-mv-rpg-maker-vx-tile-based-video-game-role-playing-video-game-infamous-2d-furniture-fb00a18f79e9e2b43e3d7e357c8d5f26_46
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 8
+        width: 86
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d39ded250b15821e0800000000000000
+      internalID: -2222436598360909507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

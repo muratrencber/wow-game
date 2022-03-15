@@ -37,7 +37,15 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\murat\scripts\MuratTest.cs" />
-     <Compile Include="Assets\koray\scripts\KorayTest.cs" />
+     <Compile Include="Assets\koray\scripts\pickableobject.cs" />
+     <Compile Include="Assets\koray\scripts\Father_AI.cs" />
+     <Compile Include="Assets\koray\scripts\proceduralgen.cs" />
+     <Compile Include="Assets\koray\scripts\competitor_Aı.cs" />
+     <Compile Include="Assets\yigit\Scripts\Platform.cs" />
+     <Compile Include="Assets\yigit\Scripts\Player.cs" />
+     <Compile Include="Assets\yigit\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\yigit\Scripts\LevelGenerator.cs" />
+     <Compile Include="Assets\yigit\Scripts\groundchecker.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
