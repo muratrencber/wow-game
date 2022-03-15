@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class pickableobject : MonoBehaviour
 {
-    
-    public virtual void pickup(){
-        //pickup sound
-        
+     void OnTriggerEnter2D(Collider2D col)
+    {
+        Pickup();
+    }
+
+
+    public virtual void Pickup(){
+
     }
 }
