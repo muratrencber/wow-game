@@ -5,14 +5,13 @@ using TMPro;
 public class dialogue_system : MonoBehaviour
 {
     public TextMeshProUGUI text_display;
-    public string[] dialouge1,dialouge2,dialouge3,dialouge4;
+    public string[] tea1,tea2,tea3,tea4,papers1,papers2;
 
 
 
     public void Start(){
-        StartCoroutine( type_dialouge(dialouge1));
     }
-    IEnumerator type_dialouge(string[] textnode){
+   public IEnumerator type_dialouge(string[] textnode){
 
         foreach(string s in textnode){
              Coroutine co;
