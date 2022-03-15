@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 5ddad2326e427f14d9190b05bf8bdec1
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Beastquit
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 721cc320df5f73c4691b94fdf4512ac9, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
