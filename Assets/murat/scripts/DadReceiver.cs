@@ -22,7 +22,7 @@ public class DadReceiver : MonoBehaviour
             if(dadItem == null || !dadItem.AvailableForConsumption)
                 continue;
             dadItem.OnConsumption();
-            //SEND DAD MESSAGE
+            Dad.OnReceivedItem(dadItem);
             break;
         }
     }

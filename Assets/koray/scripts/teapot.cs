@@ -46,7 +46,7 @@ public class teapot : MonoBehaviour, IDraggable
     {
         dragging = true;
         Vector2 mousepos = maincam.ScreenToWorldPoint(Input.mousePosition);
-         checkforcup();
+        checkforcup();
         transform.position = mousepos;
     }
 

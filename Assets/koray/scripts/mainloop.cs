@@ -19,6 +19,7 @@ public class mainloop : MonoBehaviour
     }
 
     public void FixedUpdate(){
+        /*
         if(!CurrentlyOnEvent) eventcountdown+=Random.Range(0,10f)*Time.deltaTime;
         
         if(eventcountdown>=100){
@@ -32,7 +33,7 @@ public class mainloop : MonoBehaviour
                      case 1:     askfortea_confirmation();
                     break;
             }
-        }
+        }*/
     }
 
     public void askforpapers_confirmation(){

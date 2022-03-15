@@ -9,7 +9,7 @@ public class book : pickableobject
     public override void Pickup()
     {
         base.Pickup();
-        FindObjectOfType<inventory>().bookcount++;  
+        BookManager.AddedNewBook();
     }
 
    
