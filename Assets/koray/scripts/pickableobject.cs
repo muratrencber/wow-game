@@ -6,11 +6,14 @@ public class pickableobject : MonoBehaviour
 {
      void OnTriggerEnter2D(Collider2D col)
     {
+        if(col.tag=="Player"){
         Pickup();
+
+        }
     }
 
 
     public virtual void Pickup(){
-
+        Destroy(this.gameObject);
     }
 }
