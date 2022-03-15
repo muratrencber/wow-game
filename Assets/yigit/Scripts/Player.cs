@@ -9,12 +9,11 @@ public class Player : MonoBehaviour {
 
 	public float movementSpeed = 10f;
 
-    
-		
-
 	public Transform cam;
 	public groundchecker gc;
 	private Animator anim;
+
+	public static float highestY;
 	
 
 	Rigidbody2D rb;
@@ -26,12 +25,14 @@ public class Player : MonoBehaviour {
 		rb = GetComponent<Rigidbody2D>();
 		Time.timeScale = 1;
 		anim = GetComponent<Animator>();
+		highestY = transform.position.y;
 	}
 	
 	
 	void Update () 
     {
-		        
+		if(transform.position.y > highestY)
+			highestY = transform.position.y;
 
         if(Input.GetKeyDown(KeyCode.Space) && gc.grounded){
             Vector2 velocity = rb.velocity;
