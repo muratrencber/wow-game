@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class book : pickableobject
 {
-   
+   public ParticleSystem starexp;
 
     public override void Pickup()
     {
-        base.Pickup();
         FindObjectOfType<inventory>().bookcount++;  
+        Instantiate(starexp);
+        base.Pickup();
+
     }
 
    
