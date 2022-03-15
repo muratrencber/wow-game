@@ -224,7 +224,7 @@ public class Dad : MonoBehaviour
             return;
         string[] needs = {"tea", "book", "tv"};
         CurrentNeed = needs[Random.Range(0, needs.Length)];
-        print("Dad: I need some "+CurrentNeed+".");
+        DadNotification.Show("I need some "+CurrentNeed+".");
         timer = _waitTimeAfterWanting.GetRandom();
         onTimerFinished = DidNotGetWanted;
     }

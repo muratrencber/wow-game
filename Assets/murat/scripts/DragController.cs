@@ -9,7 +9,7 @@ public class DragController : MonoBehaviour
     void Update()
     {
         Vector2 currentMousePos = Input.mousePosition;
-        if(currentMousePos.x < Screen.width * Slider.LeftRatio + 10)
+        if(currentMousePos.x < Screen.width * Slider.LeftRatio + 10 || DadNotification.IsBusy)
         {
             if(draggable != null)
                 draggable.OnDragFinish();
@@ -23,6 +23,11 @@ public class DragController : MonoBehaviour
         }
         if(Input.GetButtonDown("Fire1"))
         {
+            if(DadNotification.showing)
+            {
+                DadNotification.Hide();
+                return;
+            }
             IDraggable lastDraggable = draggable;
             draggable = null;
             Ray r = new Ray(cam.ScreenToWorldPoint(Input.mousePosition), cam.transform.forward);
