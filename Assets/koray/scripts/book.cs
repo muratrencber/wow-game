@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class book : pickableobject
 {
-   
+   public ParticleSystem starexp;
 
     public override void Pickup()
     {

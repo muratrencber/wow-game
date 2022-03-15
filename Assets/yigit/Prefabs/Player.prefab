@@ -208,6 +208,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 8
+  _checkPoints:
+  - {x: 0, y: 0}
   cam: {fileID: 0}
   gc: {fileID: 3389719275453735158}
 --- !u!95 &3389719276280550995

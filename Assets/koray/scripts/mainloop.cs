@@ -14,6 +14,8 @@ public class mainloop : MonoBehaviour
     public bool CurrentlyOnEvent=false;
     public float eventcountdown=0;
 
+    public bool satisfied=false;
+
     public void Start(){
 
     }
@@ -27,7 +29,7 @@ public class mainloop : MonoBehaviour
             CurrentlyOnEvent=true;
             int rnd=Random.Range(0,2);
             switch(rnd){
-                case 0:     askforpapers_confirmation();
+                case 0:    StartCoroutine(askforpapers_confirmation());
                     break;
 
                      case 1:     askfortea_confirmation();
@@ -36,10 +38,16 @@ public class mainloop : MonoBehaviour
         }*/
     }
 
-    public void askforpapers_confirmation(){
-        StartCoroutine(ds.type_dialouge(ds.papers1));
-        //paper -- kitap şeyini çıkart
+
+    public IEnumerator askforpapers_confirmation(){
+        //notification cıkıcak işte
+
+        yield return new WaitForSeconds(10);
+        if(!satisfied){
         Instantiate(paperchoice);
+
+        }
+        //paper -- kitap şeyini çıkart
     }
 
     public void papers_option1(){
