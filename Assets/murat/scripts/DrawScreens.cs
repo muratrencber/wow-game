@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DrawScreens : MonoBehaviour
 {
+    public static Camera LeftCamera, RightCamera;
+
     [SerializeField] GameObject _leftPlane, _rightPlane;
     [SerializeField] Material _leftMaterial, _rightMaterial;
     [SerializeField] Camera _leftCamera, _rightCamera;
@@ -16,6 +18,8 @@ public class DrawScreens : MonoBehaviour
 
     void Start()
     {
+        LeftCamera = _leftCamera;
+        RightCamera = _rightCamera;
         Draw(Slider.LeftRatio);
     }
 

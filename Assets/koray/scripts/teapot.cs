@@ -2,48 +2,58 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class teapot : MonoBehaviour
+public class teapot : MonoBehaviour, IDraggable
 {
-
+    public bool AvailableForDrag {get {return cup.fillrate < 1;}}
     int layerMask = 1 << 6;
     public ParticleSystem tea_spill;
     public Animator anim;
     public float turnprogress = 0;
     public bool leaning;
     public bool spilling;
-    Camera maincam;
+    Camera maincam {get {return DrawScreens.RightCamera;}}
+
+    [SerializeField] Transform _initalPosition;
+    [SerializeField] float _returnSpeed;
+    [SerializeField] teacup cup;
+
+    bool dragging;
 
     public GameObject teacup;
     public void Start()
     {
-        maincam = Camera.main;
         teacup = FindObjectOfType<teacup>().gameObject;
 
     }
 
-    public void Update()
+    void Update()
     {
-
+        if(!dragging)
+        {
+            transform.position = Vector2.Lerp(transform.position, _initalPosition.position, Time.deltaTime * _returnSpeed);
+            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.identity, Time.deltaTime * _returnSpeed);
+        }
     }
 
 
-    void OnMouseDown()
+    public void OnDragStart()
     {
-        GetComponent<BoxCollider2D>().enabled = false;
+        dragging = true;
+        GetComponent<BoxCollider>().enabled = false;
     }
 
-    void OnMouseDrag()
+    public void OnDrag(Vector2 drag)
     {
-        Debug.Log("evv");
+        dragging = true;
         Vector2 mousepos = maincam.ScreenToWorldPoint(Input.mousePosition);
          checkforcup();
         transform.position = mousepos;
     }
 
-    void OnMouseUp()
+    public void OnDragFinish()
     {
-        GetComponent<BoxCollider2D>().enabled = true;
-        Debug.Log("tf");
+        dragging = false;
+        GetComponent<BoxCollider>().enabled = true;
         leaning = false;
         spilling = false;
         anim.SetBool("leaning", false);
@@ -75,7 +85,6 @@ public class teapot : MonoBehaviour
         }
         else
         {
-            Debug.Log("tf");
         leaning = false;
         spilling = false;
         anim.SetBool("leaning", false);
