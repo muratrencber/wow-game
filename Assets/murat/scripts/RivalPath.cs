@@ -78,7 +78,7 @@ public class RivalPath : MonoBehaviour
         }
     }
 
-    async void OnDrawGizmos()
+    void OnDrawGizmos()
     {
         if(!_pointContainer)
             return;

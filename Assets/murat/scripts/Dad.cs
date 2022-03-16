@@ -13,10 +13,8 @@ public class MinMax
         this.max = max;
     }
 
-    public float GetRandom()
-    {
-        return Random.Range(min, max);
-    }
+    public float GetLerpValue(float ratio) => Mathf.Lerp(min, max, ratio);
+    public float GetRandom() => Random.Range(min, max);
 }
 
 public class MinMaxInt

@@ -29,6 +29,7 @@ public class FinishLoader : MonoBehaviour
     }
     public void LoadNextLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if(Rival.ReachedCount <= 0)
+            SceneManager.LoadScene("GoodEnding");
     }
 }

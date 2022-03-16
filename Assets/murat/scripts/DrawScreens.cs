@@ -7,7 +7,6 @@ public class DrawScreens : MonoBehaviour
     public static Camera LeftCamera, RightCamera;
 
     [SerializeField] GameObject _leftPlane, _rightPlane;
-    [SerializeField] Material _leftMaterial, _rightMaterial;
     [SerializeField] Camera _leftCamera, _rightCamera;
     [SerializeField] bool recenter;
 
@@ -15,6 +14,7 @@ public class DrawScreens : MonoBehaviour
     Camera mainCamera {get {return Camera.main;}}
     Vector2 lastScreenSizes = Vector2.zero;
     RenderTexture leftTexture, rightTexture;
+    Material leftMaterial, rightMaterial;
 
     void Start()
     {
@@ -38,6 +38,14 @@ public class DrawScreens : MonoBehaviour
     void Draw(float leftRatio)
     {
         Vector2 currentScreenSizes = new Vector2(Screen.width, Screen.height);
+        if(leftMaterial == null || rightMaterial == null)
+        {
+            leftMaterial = new Material(Shader.Find("Unlit/Texture"));
+            rightMaterial = new Material(Shader.Find("Unlit/Texture"));
+
+            _leftPlane.GetComponent<MeshRenderer>().sharedMaterial = leftMaterial;
+            _rightPlane.GetComponent<MeshRenderer>().sharedMaterial = rightMaterial;
+        }
         if(currentScreenSizes != lastScreenSizes)
         {
             leftTexture = new RenderTexture((int)currentScreenSizes.x, (int)currentScreenSizes.y, -1, UnityEngine.Experimental.Rendering.DefaultFormat.HDR);
@@ -46,8 +54,8 @@ public class DrawScreens : MonoBehaviour
             _leftCamera.targetTexture = leftTexture;
             _rightCamera.targetTexture = rightTexture;
             
-            _leftMaterial.mainTexture = leftTexture;
-            _rightMaterial.mainTexture = rightTexture;
+            leftMaterial.mainTexture = leftTexture;
+            rightMaterial.mainTexture = rightTexture;
             lastScreenSizes = currentScreenSizes;  
         }
 
@@ -55,17 +63,16 @@ public class DrawScreens : MonoBehaviour
         Vector2 leftSize = new Vector2(lastSize.x * leftRatio, lastSize.y);
         Vector2 rightSize = new Vector2(lastSize.x - leftSize.x, lastSize.y);
 
-        _leftMaterial.mainTextureScale = new Vector2(leftRatio, 1);
-        _rightMaterial.mainTextureScale = new Vector2((1-leftRatio), 1);
+        leftMaterial.mainTextureScale = new Vector2(leftRatio, 1);
+        rightMaterial.mainTextureScale = new Vector2((1-leftRatio), 1);
         if(recenter)
         {
-            _leftMaterial.mainTextureOffset = new Vector2((1-leftRatio) *.5f, 0);
-            _rightMaterial.mainTextureOffset = new Vector2(leftRatio *.5f, 0);
+            leftMaterial.mainTextureOffset = new Vector2((1-leftRatio) *.5f, 0);
+            rightMaterial.mainTextureOffset = new Vector2(leftRatio *.5f, 0);
         }
         else
         {
-            //_leftMaterial.mainTextureOffset = new Vector2(-1+leftRatio, 0);
-            _rightMaterial.mainTextureOffset = new Vector2(leftRatio, 0);
+            rightMaterial.mainTextureOffset = new Vector2(leftRatio, 0);
         }
 
         _leftPlane.transform.position = mainCamera.transform.position + mainCamera.transform.forward;
