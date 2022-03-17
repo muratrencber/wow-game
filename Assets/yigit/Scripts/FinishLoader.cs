@@ -27,7 +27,6 @@ public class FinishLoader : MonoBehaviour
     }
     public void LoadNextLevel()
     {
-<<<<<<< HEAD
         if(Failed)
             return;
         if(Rival.ReachedCount <= 0)
@@ -37,8 +36,5 @@ public class FinishLoader : MonoBehaviour
             Dad.OnFailedClass();
             Failed = true;
         }
-=======
-        SceneManager.LoadScene("GoodEnding");
->>>>>>> cfbd62430fcd67891481a8d082eabcbaf2d93ba4
     }
 }
