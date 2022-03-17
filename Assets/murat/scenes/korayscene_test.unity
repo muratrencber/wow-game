@@ -8603,17 +8603,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _waitTimeAfterWanting:
-    min: 10
-    max: 15
-  _waitBetweenInitial:
     min: 6
     max: 12
+  _waitBetweenInitial:
+    min: 3
+    max: 6
   _waitBetweenMaxTolerance:
-    min: 16
-    max: 24
+    min: 3
+    max: 6
   _waitBetweenMaxNegativeTolerance:
-    min: 12
-    max: 16
+    min: 3
+    max: 6
   _waitBetweenSips:
     min: 1
     max: 3
