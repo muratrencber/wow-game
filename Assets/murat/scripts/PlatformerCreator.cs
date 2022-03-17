@@ -55,7 +55,7 @@ public class PlatformerCreator : MonoBehaviour
         lastPlatform = sp;
         if(sp.bookObject.transform.position.y - lastCheckpoint.position.y > _yToAddCheckPoint)
             CreateCheckPoint(sp.bookObject.transform.position);
-        if(ShowClosestRivalAndTimer.TimerFinished && Rival.HighestRival.transform.position.y - _player.transform.position.y < 30)
+        if((ShowClosestRivalAndTimer.TimerFinished || Dad.Tolerance == 1 || Dad.NegativeTolerance == 1) && Rival.HighestRival.transform.position.y - _player.transform.position.y < 10)
         {
             sp.bookObject.SetActive(false);
             sp.winObject.SetActive(true);
