@@ -3,7 +3,7 @@ using UnityEngine.UI;
 public class teacup : MonoBehaviour, IDraggable, IDadItem
 {
     public bool AvailableForDrag {get {return fillrate >= 1 && !beingConsumedByDad;}}
-    public bool AvailableForConsumption {get {return !beingConsumedByDad && fillrate >= 1 && Dad.CurrentNeed == "tea"; }}
+    public bool AvailableForConsumption {get {return !beingConsumedByDad && fillrate >= 1 && Dad.CurrentNeed == "tea" && Dad.WaitingForNeed; }}
     public string Key {get; private set;} = "tea";
 
     [SerializeField] Transform _initialPosition, _dadPosition;
@@ -44,7 +44,7 @@ public void Start(){
         if(fillrate<= 0)
         {
             beingConsumedByDad = false;
-            Dad.OnFinishedTea();
+            //Dad.OnFinishedTea();
         }
         
     }

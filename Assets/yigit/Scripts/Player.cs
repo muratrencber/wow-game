@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour {
 
 	public float movementSpeed = 10f;
+	[SerializeField] float _initialJumpForce, _holdJumpForce, _holdTime;
 
 	public Transform cam;
 	public groundchecker gc;
@@ -19,6 +20,8 @@ public class Player : MonoBehaviour {
 	Rigidbody2D rb;
 
 	float movement = 0f;
+	bool jumping = true;
+	float jumpTimer;
 
 	
 	void Start () {
@@ -34,13 +37,26 @@ public class Player : MonoBehaviour {
 		if(transform.position.y > highestY)
 			highestY = transform.position.y;
 
-        if(Input.GetKeyDown(KeyCode.Space) && gc.grounded){
-            Vector2 velocity = rb.velocity;
-				velocity.y = 9;
-				rb.velocity = velocity;
-				gc.grounded=false;
+        if(Input.GetKeyDown(KeyCode.Space) && gc.grounded)
+		{
+			jumpTimer = 0;
+			rb.AddForce(Vector2.up * _initialJumpForce);
+            jumping = true;
+			gc.grounded=false;
 			anim.SetTrigger("jump");
         }
+		else if(Input.GetKey(KeyCode.Space) && jumping)
+		{
+			jumpTimer += Time.deltaTime;
+			if(jumpTimer > _holdTime)
+				jumping = false;
+			else
+				rb.AddForce(Vector2.up * _holdJumpForce * Time.deltaTime);
+		}
+		else
+			jumping = false;
+		if(gc.grounded)
+			jumping = false;
 		movement = Input.GetAxis("Horizontal") * movementSpeed;
 		
 		if(Input.GetAxisRaw("Horizontal")==1){

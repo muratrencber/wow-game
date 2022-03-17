@@ -51,7 +51,7 @@ public class Slider : MonoBehaviour, IDragHandler
                 newRatio = targetRatio;
                 reachingTargetRatio = false;
             }
-            SetRatio(newRatio);
+            SetUIFromRatio(newRatio);
         }
 
     }
@@ -63,6 +63,7 @@ public class Slider : MonoBehaviour, IDragHandler
 
     public static void Unlock()
     {
+        instance.lockAfterForce = false;
         Locked = false;
     }
 

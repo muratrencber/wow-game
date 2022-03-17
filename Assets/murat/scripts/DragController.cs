@@ -9,7 +9,7 @@ public class DragController : MonoBehaviour
     void Update()
     {
         Vector2 currentMousePos = Input.mousePosition;
-        if(currentMousePos.x < Screen.width * Slider.LeftRatio + 10 || DadNotification.IsBusy)
+        if(currentMousePos.x < Screen.width * Slider.LeftRatio + 10)
         {
             if(draggable != null)
                 draggable.OnDragFinish();

@@ -34,7 +34,7 @@ public class Rival : MonoBehaviour
     void Update()
     {
         animator.SetBool("running", currentPoint != null && !waiting);
-        if(currentPoint == null || waiting)
+        if(currentPoint == null || waiting || Dad.InConversation)
             return;
         if(Mathf.Sign(transform.localScale.x) != Mathf.Sign(currentPoint.endPosition.x - currentPoint.position.x))
             transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
