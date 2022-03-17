@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Main/scenes/StartMenu.unity
     guid: 48161f550069f4e4092951be208726ec
-  - enabled: 1
+  - enabled: 0
     path: Assets/yigit/scenes/platform.unity
     guid: b109db4aa46788d4e80295e24a812bab
   - enabled: 1
