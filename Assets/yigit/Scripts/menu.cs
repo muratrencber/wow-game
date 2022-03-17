@@ -7,7 +7,7 @@ public class menu : MonoBehaviour
 {
     public void menu1()
     {
-        SceneManager.LoadScene("korayscene_test");
+        SceneManager.LoadScene("DadLevel");
 
     }
 }

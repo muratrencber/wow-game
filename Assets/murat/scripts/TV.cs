@@ -4,7 +4,8 @@ public class TV : MonoBehaviour
 {
     static TV instance;
 
-    public static int CurrentChannel {get {return instance.currentChannel;}}
+    public static int CurrentChannel {get {return !instance ? 0 : instance.currentChannel;}}
+    public static bool IsOn {get {return !instance ? false : instance.isOn;}}
 
     [SerializeField] int _channelCount;
     [SerializeField] Animator _tvAnimator;
@@ -24,8 +25,8 @@ public class TV : MonoBehaviour
 
     public void Toggle()
     {
-        if(Dad.CurrentNeed == "tv")
-            Dad.OnTVOpened();
+        //if(Dad.CurrentNeed == "tv")
+        //    Dad.OnTVOpened();
         isOn = !isOn;
         _tvAnimator.SetFloat("channelIndex", !isOn ? 0 : (float)(currentChannel));
     }

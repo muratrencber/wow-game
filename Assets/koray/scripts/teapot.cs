@@ -30,7 +30,9 @@ public class teapot : MonoBehaviour, IDraggable
     {
         if(!dragging)
         {
-            transform.position = Vector2.Lerp(transform.position, _initalPosition.position, Time.deltaTime * _returnSpeed);
+            Vector3 targetPos = _initalPosition.position;
+            targetPos.z = transform.position.z;
+            transform.position = Vector3.Lerp(transform.position, targetPos, Time.deltaTime * _returnSpeed);
             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.identity, Time.deltaTime * _returnSpeed);
         }
     }
@@ -45,7 +47,8 @@ public class teapot : MonoBehaviour, IDraggable
     public void OnDrag(Vector2 drag)
     {
         dragging = true;
-        Vector2 mousepos = maincam.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 mousepos = maincam.ScreenToWorldPoint(Input.mousePosition);
+        mousepos.z = transform.position.z;
         checkforcup();
         transform.position = mousepos;
     }

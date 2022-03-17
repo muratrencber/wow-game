@@ -8,7 +8,7 @@ public class BookOnDesk : MonoBehaviour, IDraggable, IDadItem
     [SerializeField] string _bookKey;
     public int index;
     public string Key {get {return _bookKey;}}
-    public bool AvailableForConsumption {get {return Dad.CurrentNeed == "book";}}
+    public bool AvailableForConsumption {get {return Dad.CurrentNeed == "book" && Dad.WaitingForNeed;;}}
     public bool AvailableForDrag {get {return gameObject.activeSelf && (index == BookManager.CurrentBookCount - 1 || _bookKey != "book");}}
     bool dragging = false;
     public void OnDragStart() {dragging = true;}

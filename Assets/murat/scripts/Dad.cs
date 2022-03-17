@@ -2,50 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
-public class MinMax
-{
-    public float min;
-    public float max;
-    public MinMax(float min, float max)
-    {
-        this.min = min;
-        this.max = max;
-    }
-
-    public float GetRandom()
-    {
-        return Random.Range(min, max);
-    }
-}
-
-public class MinMaxInt
-{
-    
-    public int min;
-    public int max;
-    public MinMaxInt(int min, int max)
-    {
-        this.min = min;
-        this.max = max;
-    }
-
-    public float GetRandom()
-    {
-        return Random.Range(min, max + 1);
-    }
-}
-
 public class Dad : MonoBehaviour
 {
     static Dad instance;
-
+    public const float LOCK_PUSH_FORCE = -250f;
+    public const float UNLOCK_SHOW_FORCE = 50f;
     public static string CurrentNeed {get; private set;}
-    public static int Tolerance {get; private set;} = 0;
-    public static int NegativeTolerance {get; private set;} = 0;
-    public static void OnReceivedItem(IDadItem item) => instance?.OnReceivedItemP(item);
-    public static void OnFinishedTea() => instance?.OnFinishedTeaP();
-    public static void OnTVOpened() => instance?.OnTVOpenedP();
+    public static float Tolerance {get; private set;} = 0;
+    public static float NegativeTolerance {get; private set;} = 0;
+    public static void OnReceivedItem(IDadItem item)
+    {
+        instance.currentItem = item;
+        CurrentState.OnReceivedItem(item);
+    } 
+    public static bool WaitingForNeed {get {return CurrentStateType == DadStateType.WAIT_FOR_NEED || CurrentStateType == DadStateType.OBSTRUCT;}}
+    public static DadState CurrentState {get {return instance?.currentState;}}
+    public static DadStateType CurrentStateType {get {return instance.currentState.Type;}}
+    public static IDadItem CurrentItem {get {return instance?.currentItem;}}
+    public static bool InConversation {get {return CurrentStateType == DadStateType.CONFESS
+    || CurrentStateType == DadStateType.DO_FINAL_TALK
+    || CurrentStateType == DadStateType.DO_TOLERANT_TALK
+    || CurrentStateType == DadStateType.RESPOND_TO_DECLINE;}}
 
     [SerializeField] MinMax _waitTimeAfterWanting;
     [SerializeField] MinMax _waitBetweenInitial, _waitBetweenMaxTolerance, _waitBetweenMaxNegativeTolerance;
@@ -74,169 +51,45 @@ public class Dad : MonoBehaviour
 
     [SerializeField] float DEBUG_NEGTOL, DEBUG_TOL;
 
+    [SerializeField] DadState[] _states;
+
+    Dictionary<DadStateType, DadState> statesDictionary = new Dictionary<DadStateType, DadState>();
+    DadState currentState;
+
     void Awake()
     {
         instance = this;
+        InitializeStates();
+        ChangeState(DadStateType.WAIT);
     }
 
-    void Start()
+    void InitializeStates()
     {
-        timer = GetWaitTime();
-        onTimerFinished = SetNeed;
+        for(int i = 0; i < _states.Length; i++)
+        {
+            DadState ds = _states[i];
+            if(statesDictionary.ContainsKey(ds.Type))
+                continue;
+            statesDictionary.Add(ds.Type, ds);
+            ds.SetDad(this);
+        }
     }
+
+    public void ChangeState(DadStateType newState)
+    {
+        currentState?.OnStateFinished();
+        currentState = statesDictionary[newState];
+        currentState.OnStateStarted();
+    }
+
+    public void SetCurrentNeed(string need) => CurrentNeed = need;
+    public void IncreaseTolerance(float newValue) => Tolerance = Mathf.Clamp01(Tolerance + newValue);
+    public void IncreaseNegativeTolerance(float newValue) => NegativeTolerance = Mathf.Clamp01(NegativeTolerance + newValue);
 
     void Update()
     {
         DEBUG_NEGTOL = NegativeTolerance;
         DEBUG_TOL = Tolerance;
-        if(timer > 0)
-        {
-            timer -= Time.deltaTime;
-            if(timer <= 0)
-            {
-                onTimerFinished?.Invoke();
-            }
-        }
-    }
-
-    void OnReceivedItemP(IDadItem item)
-    {
-        currentItem = item;
-        CurrentNeed = "";
-        if(item.Key == "book" || item.Key == "magazine")
-        {
-            BookOnDesk bod = item as BookOnDesk;
-            bod.gameObject.SetActive(false);
-            timer = _bookReadTime.GetRandom();
-            if(item.Key == "book")
-            {
-                BookManager.RemovedLastBook();
-                _bookOnHand.SetActive(true);
-                onTimerFinished = OnReadBook;
-            }
-            else
-            {
-                _magazineOnHand.SetActive(true);
-                onTimerFinished = OnReadMagazine;
-            }
-        }
-        else if(item.Key == "tea")
-        {
-            currentCup = item as teacup;
-            timer = _waitBetweenSips.GetRandom();
-            onTimerFinished = Sip;
-        }
-        if(Slider.Locked)
-        {
-            Slider.Unlock();
-            Slider.AddForce(100);
-        }
-    }
-
-    void Sip()
-    {
-        if(currentCup)
-        {
-            timer = _waitBetweenSips.GetRandom();
-            onTimerFinished = Sip;
-            currentCup.fillrate_fall(_sipValues.GetRandom());
-        }
-        else
-        {
-            timer = GetWaitTime();
-            onTimerFinished = SetNeed;
-        }
-    }
-
-    void OnReadMagazine()
-    {
-        currentItem.OnConsumptionFinish();
-        _magazineOnHand.SetActive(false);
-        timer = GetWaitTime();
-        onTimerFinished = SetNeed;
-    }
-
-    void OnReadBook()
-    {
-        currentItem.OnConsumptionFinish();
-        Tolerance += _bookToleranceBoost;
-        _bookOnHand.SetActive(false);
-        //show dialogue
-        timer = GetWaitTime();
-        onTimerFinished = SetNeed;
-    }
-
-    void OnFinishedTeaP()
-    {
-        currentCup = null;
-        timer = GetWaitTime();
-        onTimerFinished = SetNeed;
-    }
-
-    void OnTVOpenedP()
-    {
-        if(CurrentNeed != "tv")
-            return;
-        CurrentNeed = "";
-        timer = _bookReadTime.GetRandom();
-        onTimerFinished = WatchedTV;
-        if(Slider.Locked)
-        {
-            Slider.Unlock();
-            Slider.AddForce(100);
-        }
-    }
-
-    void WatchedTV()
-    {
-        TV.Close();
-        if(TV.CurrentChannel == _tvValidChannel)
-        {
-            Tolerance += _bookToleranceBoost;
-            //show dialogue
-        }
-        timer = GetWaitTime();
-        onTimerFinished = SetNeed;
-    }
-
-    float GetWaitTime()
-    {
-        float wbi = _waitBetweenInitial.GetRandom();
-        float wbmt = _waitBetweenMaxTolerance.GetRandom();
-        float wbmnt = _waitBetweenMaxNegativeTolerance.GetRandom();
-        float tolRatio = Tolerance/(float)_fullyTolerantToleranceThreshold;
-        float negTolRatio = NegativeTolerance/(float)_convNegativeToleranceThreshold;
-
-        float w1 = Mathf.Lerp(wbi,wbmt, tolRatio);
-        float w2 = Mathf.Lerp(wbi, wbmnt, negTolRatio);
-
-        negativeBiased = w2 > w1;
-        return w2 > w1 ? w2 : w1;
-    }
-
-    void SetNeed()
-    {
-        if(!d_HadConversation && NegativeTolerance >= _convNegativeToleranceThreshold)
-        {
-            //SaySomethings
-        }
-        if(Tolerance >= _fullyTolerantToleranceThreshold || NegativeTolerance >= _convNegativeToleranceThreshold)
-            return;
-        string[] needs = {"tea", "book", "tv"};
-        CurrentNeed = needs[Random.Range(0, needs.Length)];
-        DadNotification.Show("I need some "+CurrentNeed+".");
-        timer = _waitTimeAfterWanting.GetRandom();
-        onTimerFinished = DidNotGetWanted;
-    }
-
-    void DidNotGetWanted()
-    {
-        Slider.AddForce(_pushForce, true);
-        currentMistakes++;
-    }
-
-    void SaySomethings(string[] things)
-    {
-
+        currentState.OnStateUpdate();
     }
 }

@@ -10,10 +10,12 @@ public class Slider : MonoBehaviour, IDragHandler
     static Slider instance;
 
     [SerializeField] RectTransform _sliderUI;
-    [SerializeField] float _forceDamp, _forceScaling, DEBUG_FORCE;
+    [SerializeField] float _forceDamp, _forceScaling, _reachingSpeed;
     float currentForce;
     Vector2 lastScreenSize;
     bool lockAfterForce;
+    bool reachingTargetRatio;
+    float targetRatio;
 
     void Awake()
     {
@@ -40,6 +42,17 @@ public class Slider : MonoBehaviour, IDragHandler
         }
         else if(Locked == false)
             lockAfterForce = false;
+        if(reachingTargetRatio)
+        {
+            float currentRatio = LeftRatio;
+            float newRatio = Mathf.Lerp(currentRatio, targetRatio, Time.deltaTime * _reachingSpeed);
+            if(Mathf.Sign(LeftRatio - newRatio) != Mathf.Sign(LeftRatio - currentRatio) || LeftRatio == targetRatio)
+            {
+                newRatio = targetRatio;
+                reachingTargetRatio = false;
+            }
+            SetUIFromRatio(newRatio);
+        }
 
     }
 
@@ -50,6 +63,7 @@ public class Slider : MonoBehaviour, IDragHandler
 
     public static void Unlock()
     {
+        instance.lockAfterForce = false;
         Locked = false;
     }
 
@@ -65,6 +79,14 @@ public class Slider : MonoBehaviour, IDragHandler
     {
         instance.lockAfterForce = lockAfterForce;
         instance.currentForce += force;
+    }
+
+    public static void SlideUntilRatio(float target, bool rightOriented = true)
+    {
+        if(LeftRatio == target || LeftRatio < target == rightOriented)
+            return;
+        instance.targetRatio = target;
+        instance.reachingTargetRatio = true;
     }
 
     static void RefreshSliderPosition()
