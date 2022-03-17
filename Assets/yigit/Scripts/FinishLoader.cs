@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
 public class FinishLoader : MonoBehaviour
 {
-
+    public static bool Failed;
     public bool isTriggered = false;
 
 
@@ -29,7 +27,14 @@ public class FinishLoader : MonoBehaviour
     }
     public void LoadNextLevel()
     {
+        if(Failed)
+            return;
         if(Rival.ReachedCount <= 0)
             SceneManager.LoadScene("GoodEnding");
+        else
+        {
+            Dad.OnFailedClass();
+            Failed = true;
+        }
     }
 }

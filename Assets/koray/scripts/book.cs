@@ -5,11 +5,13 @@ using UnityEngine;
 public class book : pickableobject
 {
    public ParticleSystem starexp;
-
     public override void Pickup()
     {
-        base.Pickup();
-        BookManager.AddedNewBook();
+        if(BookManager.CurrentBookCount < 5)
+        {
+            base.Pickup();
+            BookManager.AddedNewBook();
+        }
     }
 
    

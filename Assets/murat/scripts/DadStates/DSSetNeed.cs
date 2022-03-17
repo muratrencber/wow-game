@@ -9,9 +9,14 @@ public class DSSetNeed : DadState
     {
         string[] needs = {"tea", "book", "tv"};
         dad.SetCurrentNeed(needs[Random.Range(0, needs.Length)]);
-        if(Dad.NegativeTolerance == 1 || Dad.Tolerance == 1)
+        if(FinishLoader.Failed)
+        {
+            DadNotification.Show(DadLine.GetOptimalLine(_lines));
             dad.ChangeState(DadStateType.WAIT_FOR_NEED);
-        if(Dad.NegativeTolerance > Dad.Tolerance && Dad.NegativeTolerance > _bitchThreshold.min && Dad.NegativeTolerance < _bitchThreshold.max)
+        }
+        else if(Dad.NegativeTolerance == 1 || Dad.Tolerance == 1)
+            dad.ChangeState(DadStateType.WAIT_FOR_NEED);
+        else if(Dad.NegativeTolerance > Dad.Tolerance && Dad.NegativeTolerance > _bitchThreshold.min && Dad.NegativeTolerance < _bitchThreshold.max)
             dad.ChangeState(DadStateType.BITCH);
         else
         {

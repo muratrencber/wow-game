@@ -6,10 +6,11 @@ public class Dad : MonoBehaviour
 {
     static Dad instance;
     public const float LOCK_PUSH_FORCE = -250f;
-    public const float UNLOCK_SHOW_FORCE = 50f;
+    public const float UNLOCK_SHOW_FORCE = 100f;
     public static string CurrentNeed {get; private set;}
     public static float Tolerance {get; private set;} = 0;
     public static float NegativeTolerance {get; private set;} = 0;
+    public static void OnFailedClass() => instance.ChangeState(DadStateType.FAILURE_TALK);
     public static void OnReceivedItem(IDadItem item)
     {
         instance.currentItem = item;
@@ -24,30 +25,9 @@ public class Dad : MonoBehaviour
     || CurrentStateType == DadStateType.DO_TOLERANT_TALK
     || CurrentStateType == DadStateType.RESPOND_TO_DECLINE;}}
 
-    [SerializeField] MinMax _waitTimeAfterWanting;
-    [SerializeField] MinMax _waitBetweenInitial, _waitBetweenMaxTolerance, _waitBetweenMaxNegativeTolerance;
-    [SerializeField] MinMax _waitBetweenSips, _sipValues;
-    [SerializeField] MinMax _bookReadTime;
-    [SerializeField] int _mistakeCountToTolerate;
-    [SerializeField] int _binNegativeToleranceThreshold;
-    [SerializeField] int _binEndNegativeToleranceThreshold;
-    [SerializeField] int _convNegativeToleranceThreshold;
-    [SerializeField] int _toleranceHintToleranceThreshold;
-    [SerializeField] int _fullyTolerantToleranceThreshold;
-    [SerializeField] int _bookToleranceBoost, _tvValidChannel;
-    [SerializeField] float _pushForce = -250f;
-    [SerializeField] GameObject _bookOnHand, _magazineOnHand;
-
-    bool d_HadConversation = false;
-    bool negativeBiased;
-    int currentMistakes = 0;
-    bool inDialogue;
-
-    teacup currentCup = null;
     IDadItem currentItem;
 
     float timer;
-    System.Action onTimerFinished;
 
     [SerializeField] float DEBUG_NEGTOL, DEBUG_TOL;
 

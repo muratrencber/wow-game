@@ -3,6 +3,8 @@ using UnityEngine;
 public class Rival : MonoBehaviour
 {
     public static int ReachedCount = 0;
+    public static Rival HighestRival;
+    static float HighestY = -Mathf.Infinity;
     [SerializeField] GameObject[] _sprites;
     [SerializeField] Color _colorOne, _colorTwo;
     [SerializeField] float _moveSpeed, _jumpSpeed, _waitBeforeJump, _minWaitBeforeJump;
@@ -33,6 +35,11 @@ public class Rival : MonoBehaviour
     }
     void Update()
     {
+        if(transform.position.y > HighestY)
+        {
+            HighestY = transform.position.y;
+            HighestRival = this;
+        }
         animator.SetBool("running", currentPoint != null && !waiting);
         if(currentPoint == null || waiting || Dad.InConversation)
             return;

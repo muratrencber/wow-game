@@ -17,7 +17,8 @@ public enum DadStateType
     CONFESS,
     DO_FINAL_TALK,
     CHANGE_MIND,
-    BITCH
+    BITCH,
+    FAILURE_TALK
 }
 
 [System.Serializable]

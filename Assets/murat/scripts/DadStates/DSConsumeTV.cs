@@ -20,7 +20,7 @@ public class DSConsumeTV : DadState
         {
             int channel = TV.CurrentChannel;
             TV.Close();
-            if(channel == _helpfulChannel)
+            if(channel == _helpfulChannel && !FinishLoader.Failed)
             {
                 dad.ChangeState(DadStateType.BE_MORE_TOLERANT);
             }

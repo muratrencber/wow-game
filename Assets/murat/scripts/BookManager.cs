@@ -11,6 +11,7 @@ public class BookManager : MonoBehaviour
 
     void Awake()
     {
+        CurrentBookCount = 0;
         bookPositions = new Vector3[bookContainer.childCount];
         books = new BookOnDesk[bookContainer.childCount];
         for(int i = 0; i < bookContainer.childCount; i++)
@@ -21,7 +22,6 @@ public class BookManager : MonoBehaviour
             books[i].index = i;
             bookt.gameObject.SetActive(false);
         }
-        AddedNewBook();
     }
 
     public static void AddedNewBook()

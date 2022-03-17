@@ -29,6 +29,6 @@ public class DSDoFinalTolerantTalk : DadState
     {
         didTalk = true;
         Slider.Unlock();
-        Slider.AddForce(Dad.UNLOCK_SHOW_FORCE);
+        Slider.AddForce(-Dad.LOCK_PUSH_FORCE);
     }
 }

@@ -26,11 +26,19 @@ public class DadLine
         List<DadLine> finalLines = GetList(lines);
         if(finalLines.Count == 0)
             return null;
-        finalLines.Sort((a,b) => (Mathf.Abs(a.threshold).CompareTo(Mathf.Abs(b.threshold))));
-        int index = Mathf.FloorToInt((isNegative ? Dad.NegativeTolerance : Dad.Tolerance) * finalLines.Count);
+        finalLines.Sort((a,b) => CompareLines(a,b));
+        int index = Mathf.FloorToInt((isNegative ? Dad.NegativeTolerance : Dad.Tolerance) * (finalLines.Count - 1));
         if(index > finalLines.Count - 1 || index < 0)
             return null;
         return finalLines[index];
+    }
+
+    static int CompareLines(DadLine a, DadLine b)
+    {
+        if(a.threshold != b.threshold)
+            return Mathf.Abs(a.threshold).CompareTo(Mathf.Abs(b.threshold));
+        else
+            return Random.Range(0,10) > 4 ? -1 : 1;
     }
 
     public static List<DadLine> GetList(DadLine[] lines)
@@ -42,7 +50,7 @@ public class DadLine
             DadLine l = lines[i];
             if(l.threshold != 0 && l.threshold > 0 == isNegative)
                 continue;
-            if(l.key != Dad.CurrentNeed)
+            if(l.key != "" && l.key != Dad.CurrentNeed)
                 continue;
             finalLines.Add(l);
         }

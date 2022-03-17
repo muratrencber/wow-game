@@ -1,4 +1,4 @@
-using System.Collections;
+using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -74,6 +74,26 @@ public class Player : MonoBehaviour {
 		else{
 		anim.SetBool("running", false );
 
+		}
+
+		if(transform.position.y < 200)
+		{
+            GameObject[] checkpoints = GameObject.FindGameObjectsWithTag("Checkpoint");
+            List<GameObject> checkpointsList = checkpoints.ToList();
+            checkpointsList.Sort((a,b) => b.transform.position.y.CompareTo(a.transform.position.y));
+            foreach(GameObject checkPoint in checkpointsList)
+            {
+                if(checkPoint.transform.position.y < Player.highestY)
+                {
+					Vector2 velo = rb.velocity;
+					velo.y = 0;
+					rb.velocity = velo;
+					Vector3 pos = checkPoint.transform.position;
+					pos.z = transform.position.z;
+                    transform.position = pos;
+                    return;
+                }
+            }
 		}
 	}
 

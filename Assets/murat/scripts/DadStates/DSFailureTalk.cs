@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class DSConfessFeelings : DadState
+public class DSFailureTalk : DadState
 {
-    public override DadStateType Type {get{return DadStateType.CONFESS;}}
+    public override DadStateType Type {get{return DadStateType.FAILURE_TALK;}}
     [SerializeField] DadLine[] lines;
     bool didTalk = false;
 
@@ -26,7 +26,5 @@ public class DSConfessFeelings : DadState
     public override void OnStateFinished()
     {
         didTalk = true;
-        Slider.Unlock();
-        Slider.AddForce(-Dad.LOCK_PUSH_FORCE);
     }
 }

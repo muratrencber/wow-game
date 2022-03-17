@@ -14,6 +14,11 @@ public class DSConsumeReadable : DadState
         isBook = Dad.CurrentItem.Key == "book";
         if(isBook)
             BookManager.RemovedLastBook();
+        else
+        {
+            BookOnDesk bod = Dad.CurrentItem as BookOnDesk;
+            bod.gameObject.SetActive(false);
+        }
         timer = isBook ? _bookReadTime.GetRandom() : _magazineReadTime.GetRandom(); 
         _holdingBook.SetActive(isBook);
         _holdingPaper.SetActive(!isBook);
@@ -26,7 +31,7 @@ public class DSConsumeReadable : DadState
         {
             _holdingPaper.SetActive(false);
             _holdingBook.SetActive(false);
-            if(isBook)
+            if(isBook && !FinishLoader.Failed)
             {
                 dad.ChangeState(DadStateType.BE_MORE_TOLERANT);
             }
@@ -37,5 +42,12 @@ public class DSConsumeReadable : DadState
                 dad.ChangeState(DadStateType.WAIT);
             }
         }
+    }
+
+    public override void OnStateFinished()
+    {
+        BookOnDesk bod = Dad.CurrentItem as BookOnDesk;
+        if(bod && bod.Key == "magazine")
+            bod.gameObject.SetActive(true);
     }
 }

@@ -43,6 +43,28 @@ public class RivalPath : MonoBehaviour
         instance = this;
     }
 
+    public static void AddPathPoint(PathPoint p)
+    {
+        p.index = instance.points.Count;
+        instance.points.Add(p);
+    }
+
+    public static PathPoint RemoveLastPathPoint()
+    {
+        if(instance.points.Count == 0)
+            return null;
+        PathPoint last = instance.points[instance.points.Count - 1];
+        instance.points.RemoveAt(instance.points.Count - 1);
+        return last;
+    }
+
+    public static PathPoint GetLastPathPoint()
+    {
+        if(!instance || instance.points.Count == 0)
+            return null;
+        return instance.points[instance.points.Count - 1];
+    }
+
     public static PathPoint GetPoint(int i)
     {
         return instance.GetPointPrivate(i);

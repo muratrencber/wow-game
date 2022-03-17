@@ -92,6 +92,10 @@
      <Compile Include="Assets\murat\scripts\DadLine.cs" />
      <Compile Include="Assets\murat\scripts\EvaOption.cs" />
      <Compile Include="Assets\murat\scripts\EvaOptions.cs" />
+     <Compile Include="Assets\murat\scripts\PlatformerCreator.cs" />
+     <Compile Include="Assets\murat\scripts\SchoolPlatform.cs" />
+     <Compile Include="Assets\murat\scripts\DadStates\DSFailureTalk.cs" />
+     <Compile Include="Assets\murat\scripts\ShowClosestRivalAndTimer.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

@@ -29,7 +29,7 @@ public class DSWaitForNeed : DadState
         {
             dad.ChangeState(DadStateType.CONSUME_TV);
         }
-        if(timer > 0)
+        if(timer > 0 && !FinishLoader.Failed)
         {
             timer -= Time.deltaTime;
             if(timer <= 0)
